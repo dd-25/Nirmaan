@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Count</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-con">
+            <img src="logo.png" class="logo">
+
+            <span class="search-container">
+
+                <input type="text" placeholder="Location">
+                <input type="text" placeholder="Search services">
+
+            </span>
+            <div class="icons">
+                <i class='bx bx-search-alt-2 search-icon'></i>
+                <i class="fas fa-bars menuIcon"></i>
+            </div>
+        </div>
+    </nav>
+    <div id="menuOptions" class="menu-options">
+        <!-- Your menu options and login/signup button here -->
+        <div style="width: 200px; height: 200px;">
+            <!-- Menu options -->
+        </div>
+        <div class="login-container">
+            <a href="#" class="login-btn">Login/SignUp</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="services-container">
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+        </div>
+        <!-- this part of the code is for the flex which will be created when we click any aboveservice -->
+        <div class="services-click">
+            <div class="service-click">
+                <i class="fas fa-arrow-circle-left"></i>
+                <div class="h architect">
+                    <div class="box">
+                        <div class="profile-photo">
+                            <!-- Profile photo here -->
+                        </div>
+                        <div class="details">
+                            <h3 class="name">John Doe</h3>
+                            <div class="rating">Rating: 4.5</div>
+                            <!-- Other details for urban services -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-click contractor"></div>
+            <div class="service-click flooring"></div>
+            <div class="service-click painter"></div>
+            <div class="service-click furniture"></div>
+            <div class="service-click electrician"></div>
+            <div class="service-click plumber"></div>
+            <div class="default-info">
+                <img src="logo.png" alt="">
+            </div>
+
+            <div class="box-info">
+                <div class="photos">
+                    <!-- Insert your shop photos here -->
+                    <img src="shop1.jpg" alt="Shop 1">
+                    <img src="shop2.jpg" alt="Shop 2">
+                    <img src="shop3.jpg" alt="Shop 3">
+                    <img src="shop4.jpg" alt="Shop 4">
+                </div>
+                <h1>Name of the Company</h1>
+                <div class="ratings">
+                    <!-- Insert star ratings and reviews here -->
+                    <div class="stars">
+                        <span>⭐️</span>
+                        <span>⭐️</span>
+                        <span>⭐️</span>
+                        <span>⭐️</span>
+                        <span>☆</span> <!-- Empty star -->
+                    </div>
+                    <p class="reviews">Based on 100 reviews</p>
+                </div>
+                <div class="options">
+                    <!-- Insert span options here -->
+                    <span>Website</span>
+                    <span><a href="https://www.google.com/maps/dir/21.0082668,78.9508427/IIIT+Nagpur,+Adilabad+-+Nagpur+Road,+Waranga,+Maharashtra/@20.9500043,78.9851749,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bd4c0529518230f:0x45b76be0621cbb88!2m2!1d79.0263748!2d20.9499291?entry=ttu" target="_blank">Directions</a></span>
+                    <span>Save</span>
+                    <span>Call</span>
+                </div>
+                <div class="additional-info">
+                    <p><strong>Service options:</strong> Offers same-day delivery</p>
+                    <p><strong>Address:</strong> 25-A, Sai Preran, Hanuman Nagar, Nagpur, Maharashtra 440009</p>
+                    <p><strong>Hours:</strong> Open ⋅ Closes 8 pm</p>
+                    <p><strong>Phone:</strong> 094221 03535</p>
+                    <p><a href="#">Suggest an edit</a> · <a href="#">Own this business?</a></p>
+                </div>            
+            </div>
+        </div>
+
+
+
+        <div class="info-container">
+            <div class="info-item">
+                <h2>Notifications</h2>
+                <div class="info-hr">
+                    <hr>
+                </div>
+                <div>
+                    <p>Content for Notifications Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum
+                        alias expedita consequuntur eaque enim autem magnam sequi amet vitae laborum, inventore possimus
+                        excepturi aliquid magni perspiciatis dolore quidem blanditiis obcaecati! Ullam delectus ducimus
+                        enim vel repudiandae optio voluptatem quibusdam odio maiores itaque cupiditate commodi ipsum,
+                        repellat ratione ea quasi explicabo mollitia nisi. Voluptatum est tempora obcaecati natus quia
+                        explicabo! Consequatur sunt vitae et fugiat impedit officiis odio a quae architecto soluta ipsum
+                        quis in ex exercitationem nulla, nihil, corporis fuga quidem accusamus nemo voluptatum tempora
+                        aspernatur laudantium!</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <h2>History</h2>
+                <div class="info-hr">
+                    <hr>
+                </div>
+                <div>
+                    <p>Content for History</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <h2>Review</h2>
+                <div class="info-hr">
+                    <hr>
+                </div>
+                <div>
+                    <p>Content for Review</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter-container">
+            <span class="counter" id="userCount">0</span>
+            <div class="label">Satisfied Users</div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p><i class="fa fa-location-arrow"></i> Butibori , Nagpur </p>
+                    <p><i class="fa fa-phone"></i> +91-9764268681 </p>
+                    <p><i class="fa fa fa-envelope"></i> bt22csh013@iiitn.ac.in </p>
+
+                </div>
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 1</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                    <!--headin5_amrc ends here-->
+
+                    <ul class="footer_ul2_amrc">
+                        <li><a href="#"><i class="fab fa-instagram fleft padding-right "></i> </a>
+                            <p>harshjaiswal21</p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-instagram fleft padding-right "></i> </a>
+                            <p>sarvesh_bajaj_812</p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-instagram fleft padding-right "></i> </a>
+                            <p>dd_25</p>
+                        </li>
+                    </ul>
+                    <!--footer_ul2_amrc ends here-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright &copy 2024 | Designed With by <a href="#">URBAN SERVICES</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
+
+    <script src="content.js"></script>
+</body>
+
+</html>
