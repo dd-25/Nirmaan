@@ -11,13 +11,13 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-con">
-            <img src="logo.png" class="logo">
+            <img src="/logo.png" class="logo">
 
             <span class="search-container">
 
@@ -31,41 +31,48 @@
             </div>
         </div>
     </nav>
+    
     <div id="menuOptions" class="menu-options">
-        <!-- Your menu options and login/signup button here -->
-        <div style="width: 200px; height: 200px;">
-            <!-- Menu options -->
+        <div style="width: 200px; height: 200px;" class = 'after-login'>
+            <div>
+                <img src="" alt="profile"><span>Name</span>
+            </div>
+            <ul>
+                <li>Edit Profile</li>
+                <li>Check Progress</li>
+                <li>Logout</li>
+            </ul>
         </div>
         <div class="login-container">
-            <a href="#" class="login-btn">Login/SignUp</a>
+            <a href="/login" class="login-btn">Login/SignUp</a>
         </div>
     </div>
 
     <div class="main-content">
 
         <div class="services-container">
-            <div class="service"></div>
-            <div class="service"></div>
-            <div class="service"></div>
-            <div class="service"></div>
-            <div class="service"></div>
-            <div class="service"></div>
-            <div class="service"></div>
+            <a class="service" href="home/architect"></a>
+            <a class="service" href="home/contractor"></a>
+            <a class="service" href="home/painter"></a>
+            <a class="service" href="home/flooring"></a>
+            <a class="service" href="home/furniture"></a>
+            <a class="service" href="home/electrician"></a>
+            <a class="service" href="home/plumber"></a>
         </div>
         <!-- this part of the code is for the flex which will be created when we click any aboveservice -->
-        <div class="services-click">
-            <div class="service-click">
+        <!-- <div class="services-click">
+            <div class="service-click" id="architect">
                 <i class="fas fa-arrow-circle-left"></i>
                 <div class="h architect">
                     <div class="box">
-                        <div class="profile-photo">
+                        <div class="profile-photo"> -->
                             <!-- Profile photo here -->
-                        </div>
+                        <!-- </div>
                         <div class="details">
                             <h3 class="name">John Doe</h3>
-                            <div class="rating">Rating: 4.5</div>
+                            <div class="rating">Rating: 4.5</div> -->
                             <!-- Other details for urban services -->
-                        </div>
+                        <!-- </div>
                     </div>
                 </div>
             </div>
@@ -80,28 +87,28 @@
             </div>
 
             <div class="box-info">
-                <div class="photos">
+                <div class="photos"> -->
                     <!-- Insert your shop photos here -->
-                    <img src="shop1.jpg" alt="Shop 1">
+                    <!-- <img src="shop1.jpg" alt="Shop 1">
                     <img src="shop2.jpg" alt="Shop 2">
                     <img src="shop3.jpg" alt="Shop 3">
                     <img src="shop4.jpg" alt="Shop 4">
                 </div>
                 <h1>Name of the Company</h1>
-                <div class="ratings">
+                <div class="ratings"> -->
                     <!-- Insert star ratings and reviews here -->
-                    <div class="stars">
+                    <!-- <div class="stars">
                         <span>⭐️</span>
                         <span>⭐️</span>
                         <span>⭐️</span>
                         <span>⭐️</span>
-                        <span>☆</span> <!-- Empty star -->
+                        <span>☆</span>
                     </div>
                     <p class="reviews">Based on 100 reviews</p>
                 </div>
-                <div class="options">
+                <div class="options"> -->
                     <!-- Insert span options here -->
-                    <span>Website</span>
+                    <!-- <span>Website</span>
                     <span><a href="https://www.google.com/maps/dir/21.0082668,78.9508427/IIIT+Nagpur,+Adilabad+-+Nagpur+Road,+Waranga,+Maharashtra/@20.9500043,78.9851749,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bd4c0529518230f:0x45b76be0621cbb88!2m2!1d79.0263748!2d20.9499291?entry=ttu" target="_blank">Directions</a></span>
                     <span>Save</span>
                     <span>Call</span>
@@ -114,7 +121,7 @@
                     <p><a href="#">Suggest an edit</a> · <a href="#">Own this business?</a></p>
                 </div>            
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -237,7 +244,8 @@
 
     </footer>
 
-    <script src="content.js"></script>
+    <script src="/content.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

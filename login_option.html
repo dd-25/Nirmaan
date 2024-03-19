@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Type Selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center">Choose Login Type</h2>
+      <div class="text-center">
+        <button class="btn btn-lg btn-primary" onclick="loginAsUser()">Login as User</button>
+        <button class="btn btn-lg btn-success" onclick="loginAsContractor()">Login as Contractor</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function loginAsUser() {
+    window.location.href = "login/user";
+  }
+
+  function loginAsContractor() {
+    window.location.href = "login/professional";
+  }
+</script>
+
+</body>
+</html>

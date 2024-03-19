@@ -32,84 +32,34 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-observer.observe(target); // Start observing the target element
-
-// window.onload = function () {
-//     animateCount(50000); // Change 50000 to your desired final count
-// };  
-
-let services = document.querySelectorAll('.service');
-
-services.forEach(function (service, index) {
-    // Add click event listener to each service
-    service.addEventListener('click', function () {
-        // Implement different functions based on the index of the clicked service
-        document.querySelector('.services-click').style.visibility = 'visible';
-        switch (index) {
-            case 0:
-                document.querySelector('.architect').style.display = 'flex';
-                
-                console.log("Architect");
-                break;
-            case 1:
-                document.querySelector('.contractor').style.display = 'flex'
-                console.log("Clicked on service 2");
-                break;
-            case 2:
-                document.querySelector('.flooring').style.display = 'flex'
-                console.log("Clicked on service 3");
-                break;
-            case 3:
-                document.querySelector('.painter').style.display = 'flex'
-                console.log("Clicked on service 3");
-                break;
-            case 4:
-                document.querySelector('.furniture').style.display = 'flex'
-                console.log("Clicked on service 3");
-                break;
-            case 5:
-                document.querySelector('.electrician').style.display = 'flex'
-                console.log("Clicked on service 3");
-                break;
-            case 6:
-                document.querySelector('.plumber').style.display = 'flex'
-                console.log("Clicked on service 3");
-                break;
-        }
-    });
-});
-
-let cross_icon = document.querySelector('.fa-arrow-circle-left')
-cross_icon.addEventListener('click',()=>{
-    document.querySelector('.services-click').style.visibility = 'hidden';
-    document.querySelector('.architect').style.display = 'none';
-    document.querySelector('.contractor').style.display = 'none';
-    document.querySelector('.flooring').style.display = 'none';
-    document.querySelector('.painter').style.display = 'none';
-    document.querySelector('.electrician').style.display = 'none';
-    document.querySelector('.plumber').style.display = 'none';
-    var boxInfoHidden = document.querySelector('.box-info.hidden');
-    if (boxInfoHidden && window.getComputedStyle(boxInfoHidden).display === 'flex') {
-        document.querySelector('.box-info').classList.toggle('hidden');
-    }
-    
-})
+try{
+    observer.observe(target); // Start observing the target element
+}
+catch{
+    console.log("caught successfully")
+}
 
 document.querySelector('.search-icon').addEventListener('click', function() {
     var searchContainer = document.querySelector('.search-container');
     searchContainer.classList.toggle('show');
 });
-
 document.querySelector('.menuIcon').addEventListener('click', function() {
     var menuOptions = document.querySelector('.menu-options');
     // Toggle the visibility of the menu options
     menuOptions.classList.toggle('hidden');
 });
 
-
-
-const box = document.querySelector('.box')
-box.addEventListener('click',()=>{
-
-    document.querySelector('.box-info').classList.toggle('hidden');
-})
+const scrollDiv = document.querySelector(".h");
+function saveScrollPosition() {
+    sessionStorage.setItem('scrollPosition', scrollDiv.scrollTop);
+}
+function restoreScrollPosition() {
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        scrollDiv.scrollTo(0, parseInt(scrollPosition));
+        sessionStorage.removeItem('scrollPosition');
+    }
+}
+if(scrollDiv)
+scrollDiv.addEventListener('scroll', saveScrollPosition);
+window.onload = restoreScrollPosition;
